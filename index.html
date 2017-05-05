@@ -8,18 +8,26 @@
     <title>Ping Pong!</title>
   </head>
   <body>
-    <div>Pingpong is a game of numbers.  Multiples of 3, 5, and 15 are SPECIAL.  Enter a positive integer!
-
-    * Entries with decimal places will be truncated to the nearest lower integer.
-
-    * Negative numbers will be converted to positive numbers.
+    <div class="h1">Pingpong is a game of numbers.
+      <img src="img/airPong.jpg" alt="Air Kelly Watch The Stars">
     </div>
+
+    <div class="well">
+    <br><h5>Nota Bene:</h5>
+    <ul>
+    <li>Acceptable input* is a positive integer.</li>
+    <li>Multiples of 3, 5, and 15 are SPECIAL.</li>
+    <li>Entries with decimal places will be truncated to the nearest lower integer.</li>
+    <li>Negative numbers will be converted to positive numbers.</li>
+  </ul>
+  <br><p><h6>* "Acceptable input" might mean different things if you are testing software.  See what you can get away with...</h6>
+  </div>
     <form id="userForm">
       <div class="form-group">
         <label for="forLabel"></label>
         <input id="userInput" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">ENTER WISELY</button>
+      <button type="submit" class="btn">SERVE SOME PINGPONG REALNESS</button>
     </form>
     <div id="output">
     </div>
