@@ -2,7 +2,7 @@
 var backendFunction = function(data) {
   // do stuff
   parseInt(data);
-  data = "here is a result";
+  // data = "here is a result";
   return data;
 };
 
