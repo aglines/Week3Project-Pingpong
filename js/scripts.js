@@ -2,28 +2,27 @@
 var pingPong = function(userInput) {
   var outputArray = [];
   //ensure input is a number datatype, and an integer
-  var number = Math.floor(Number(userInput));
+  var number = Math.floor(Math.abs(Number(userInput)));
   if ( isNaN(number) ) {
     return result = "Invalid entry; please use only numbers.";
-
   }
   else {
 
   for (i=1; i<= number; i+=1) {
     if (i%15 === 0) {
-      temp = "ping-pong";
+      temp = " ping-pong";
       outputArray.push(temp);
     }
     else if (i%3 === 0) {
-      temp = "ping";
+      temp = " ping";
       outputArray.push(temp);
     }
     else if (i%5===0) {
-      temp = "pong";
+      temp = " pong";
       outputArray.push(temp);
     }
     else {
-      outputArray.push(i);
+      outputArray.push(" " + i);
     }
   }; // FOR LOOP
   return outputArray;
