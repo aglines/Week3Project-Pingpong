@@ -25,7 +25,6 @@ var pingPong = function(userInput) {
     return outputArray;
   } // ELSE FOR VALID INPUT
 }; // FUNCTION PINGPONG
-
 // FRONTEND LOGIC
 $(document).ready(function() {
   $("#userForm").submit(function() {
