@@ -1,10 +1,16 @@
+var outputArray = [];
+
 // BACKEND LOGIC
-var backendFunction = function(data) {
-  // do stuff
-  parseInt(data);
-  // data = "here is a result";
-  return data;
-};
+var pingPong = function(userInput) {
+  //ensure input is a number, if not return "invalid"
+    // come back to this if need
+  var number = parseInt(userInput);
+  for (i=1; i<= number; i+=1) {
+    outputArray.push(i);
+  }
+  return outputArray;
+
+}; // FUNCTION CLOSE
 
 
 
@@ -12,8 +18,8 @@ var backendFunction = function(data) {
 $(document).ready(function() {
   $("#userForm").submit(function() {
     event.preventDefault();
-    var data = $("#userInput").val();
-    var result = backendFunction(data);
-    $("#output").text(result);
+    var input = $("#userInput").val();
+    var output = pingPong(input);
+    $("#output").text(output);
   });
 });
