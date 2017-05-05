@@ -1,10 +1,3 @@
-//ATTEMPTS AT DRIER CODE
-//DESCRIPTION:
-//Using arrayBuilder to "subcontract" out
-// the work of pushing the current temp var onto array.
-
-//ANALYSIS:  NOT DRIER THAN ORIGINAL
-
 // BACKEND LOGIC
 var pingPong = function(userInput) {
   var outputArray = [];
@@ -26,18 +19,11 @@ var pingPong = function(userInput) {
       else {
         temp = " " + i;
       }
-      console.log(temp, outputArray);
-      arrayBuilder(temp, outputArray);
+      outputArray.push(temp);
     }; // FOR LOOP
     return outputArray;
   } // ELSE
 }; // FUNCTION PINGPONG
-
-
-var arrayBuilder = function(temp, outputArray) {
-  outputArray.push(temp);
-
-}
 
 // FRONTEND LOGIC
 $(document).ready(function() {
