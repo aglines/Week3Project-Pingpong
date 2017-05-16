@@ -12,7 +12,7 @@ A web application that will accept numerical user input, and will output a count
 
 ## Specifications
 
-|  behavior | input  | output  |
+|  Behavior | Input  | Output  |
 |---|---|---|
 | Will accept a positive integer as input  | enter number, hit Submit  |  Count up from 1 to user's input will be displayed | 
 | Will not accept floats, negative numbers, or non-number text  | float, negative number, non-number text   |  Error message "please enter a positive integer" |
