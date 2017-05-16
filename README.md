@@ -12,13 +12,14 @@ A web application that will accept numerical user input, and will output a count
 
 ## Specifications
 
-* The app will accept a number as input from the user.
-* The app will count up from 1 to the entered number,
-outputting each integer as it goes.
-* If input number is divisible by 3, output will be the string "ping".
-* If input number is divisible by 5, output will be the string "pong".
-* If input number is divisible by 15, output will be the string "ping-pong".
-* Entering a new number should clear the results.  
+|  behavior | input  | output  |
+|---|---|---|
+| Will accept a positive integer as input  | enter number, hit Submit  |  Count up from 1 to user's input will be displayed | 
+| Will not accept floats, negative numbers, or non-number text  | float, negative number, non-number text   |  Error message "please enter a positive integer" |
+| Integers divisible by 3 | Integer divisible by 3 | Instead of multiples of 3, the string "ping" will appear |
+| Integers divisible by 5 | Integer divisible by 5 | Instead of multiples of 5, the string "pong" will appear |
+| Integers divisible by 15 | Integer divisible by 15 | Instead of multiples of 15, the string "ping-pong" will appear |
+| New entry will clear results | Any new entry, either valid or not | Results from previous entries will be cleared |
 
 ## Setup
 
