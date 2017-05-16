@@ -5,23 +5,20 @@ var pingPong = function(userInput) {
   if ( isNaN(number) ) {
     return result = "Invalid entry; please use only numbers.";
   }
-  else {
-    for (i=1; i<= number; i+=1) {
-      var word = "ping";
-      if (i%15 === 0) {
-        word = word + "-" + (word.replace("i", "o"));
-      }
-      else if (i%5===0) {
-        word = word.replace("i", "o")
-      }
-      else if (i%3===0){
-        // word needs no change, but this branch cannot come last
-      }
-      else {
-        word = i;
-      }
-      outputArray.push(word);
-    }; // FOR LOOP
+ else { 
+   for (i=1; i<= number; i+=1) { 
+     var word = "ping"; 
+     if (i%15 === 0) { 
+       word = word + "-" + (word.replace("i", "o"));
+     } 
+     else if (i%5===0) {
+       word = word.replace("i", "o") 
+     } 
+     else if (i%3!==0){ 
+       word = i; 
+     } 
+     outputArray.push(word); 
+   }; // FOR LOOP
     return outputArray;
   } // ELSE FOR VALID INPUT
 }; // FUNCTION PINGPONG
